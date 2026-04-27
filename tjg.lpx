@@ -1,0 +1,7 @@
+#!name=天玑观商品监控
+#!desc=天玑观商品上新通知
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/tjg.png
+
+[Script]
+cron "*/30 8-23 * * *" script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/tjg.js, timeout=60, tag=天玑馆
+
