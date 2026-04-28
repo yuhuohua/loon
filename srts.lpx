@@ -1,0 +1,22 @@
+#!name=生日提醒助手
+#!desc=支持农历/公历，可设置提前 N 天通知。\n\n[配置参数]\n⓵CRON定时设置: 每天运行的时间 (默认9点)\n\n⓶提前天数: 设置提前几天开始提醒 (例如填3，则生日倒计时3天、2天、1天都会通知)\n\n⓷ 生日数据: \n格式: 名字@类型@日期\n类型: 0=公历, 1=农历\n日期: MM-DD\n多人用分号";"隔开\n示例: 老婆@1@10-13或，老婆@1@10-13;妈妈@0@05-20
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/djs.png
+#!author=〈ザㄩメ火华
+
+[Argument]
+CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
+提前天数=input,"5",tag=提前天数, desc=提前天数
+生日数据1=input,"老婆@1@10-13",tag=生日数据1, desc=生日数据1
+生日数据2=input,"",tag=生日数据2, desc=生日数据2 
+生日数据3=input,"",tag=生日数据3, desc=生日数据3
+生日数据4=input,"",tag=生日数据4, desc=生日数据4 
+生日数据5=input,"",tag=生日数据5, desc=生日数据5
+生日数据6=input,"",tag=生日数据6, desc=生日数据6
+生日数据7=input,"",tag=生日数据7, desc=生日数据7 
+生日数据8=input,"",tag=生日数据8, desc=生日数据8 
+生日数据9=input,"",tag=生日数据9, desc=生日数据9
+生日数据10=input,"",tag=生日数据10, desc=生日数据10
+
+[Script]
+cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/srts.js, timeout=120, tag= 生日提醒, argument=[{生日数据1},{生日数据2},{生日数据3},{生日数据4},{生日数据5},{生日数据6},{生日数据7},{生日数据8},{生日数据9},{生日数据10},{提前天数}]
+
