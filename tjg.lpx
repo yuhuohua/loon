@@ -4,8 +4,7 @@
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/tjg.png
 
 [Argument]
-CRON定时设置=input,"*/30 8-23 * * *"
-
+CRON定时设置=input,"*/30 8-18 * * *",tag=CRON定时设置, desc=CRON定时设置
 [Script]
 cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/tjg.js, timeout=60, tag=天玑馆
 
