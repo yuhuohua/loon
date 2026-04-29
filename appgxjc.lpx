@@ -1,0 +1,30 @@
+#!name=应用更新检测
+#!desc=查询App Store应用更新状态，支持多区并发查询，可自定义20个App参数。CRON定时设置: 每天运行的时间 (默认早上8点到晚上11点，每1个小时运行一次)\n\n⓶ 应用数据 (最高支持20个): \n格式: 名称@BundleID@图标@分类\n(注: 图标和分类为可选填项，不填则默认归为“未分类”)\n\n示例1 (完整版): 微信@com.tencent.xin@💬@社交应用\n示例2 (极简版): Surge@com.nssurge.inc.surge-ios\n\n请在上面按需填入应用信息，留空的参数槽会自动忽略。\n脚本代码最底部有图标可供复制。
+#!author=〈ザㄩメ火华
+#!icon =https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/App%20Store.png
+
+[Argument]
+CRON定时设置 = input, "0 8-23/1 * * *", tag=CRON定时设置, desc=每天运行的时间 (默认早上8点到晚上11点，每1个小时运行一次)
+应用1 = input, "Surge@com.nssurge.inc.surge-ios@⚡️@代理工具", tag=应用1, desc=格式: 名称@BundleID@图标@分类 (图标和分类选填，留空自动忽略)
+应用2 = input, "Shadowrocket@com.liguangming.Shadowrocket@🚀@代理工具", tag=应用2
+应用3 = input, "Loon@com.ruikq.decar@🎈@代理工具", tag=应用3
+应用4 = input, "Quantumult X@com.crossutility.quantumult-x@🌀@代理工具", tag=应用4
+应用5 = input, "微信@com.tencent.xin@💬@社交应用", tag=应用5
+应用6 = input, "", tag=应用6
+应用7 = input, "", tag=应用7
+应用8 = input, "", tag=应用8
+应用9 = input, "", tag=应用9
+应用10 = input, "", tag=应用10
+应用11 = input, "", tag=应用11
+应用12 = input, "", tag=应用12
+应用13 = input, "", tag=应用13
+应用14 = input, "", tag=应用14
+应用15 = input, "", tag=应用15
+应用16 = input, "", tag=应用16
+应用17 = input, "", tag=应用17
+应用18 = input, "", tag=应用18
+应用19 = input, "", tag=应用19
+应用20 = input, "", tag=应用20
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/appjc.js, timeout=120, tag=应用更新检测, argument=[{应用1},{应用2},{应用3},{应用4},{应用5},{应用6},{应用7},{应用8},{应用9},{应用10},{应用11},{应用12},{应用13},{应用14},{应用15},{应用16},{应用17},{应用18},{应用19},{应用20}]
