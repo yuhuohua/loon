@@ -1,0 +1,19 @@
+#!name=WeTalk 自动化签到+视频奖励
+#!desc=WeTalk 签到做任务白嫖国外手机号\n\nCRON−WeTalk:脚本运行时间(默认早上10点、下午16点、晚上22点)\n\n通知模式，填0每次运行都弹窗通知，填1为仅22点总汇通知。
+#!icon=https://raw.githubusercontent.com/loveyuwy/hao/refs/heads/main/WeTalk.png
+
+
+[Argument]
+token获取 = switch, true, true, tag = 抓取Token开关, desc = 默认开启。抓取Token成功后, 可关闭此开关
+CRON−WeTalk=input,"0 10-22/6 * * *",tag=CRON−WeTalk, desc=CRON−WeTalk
+通知模式=input,"0",tag=通知模式, desc=0为每次运行通知，1为仅22点总汇通知
+
+
+[Script]
+http-response ^https:\/\/api\.wetalkapp\.com\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/loveyuwy/hao/refs/heads/main/WeTalk.js, requires-body=true, timeout=60, tag=Wetalk_GetCookie, enable = {token获取}
+
+
+cron {CRON−WeTalk} script-path=https://raw.githubusercontent.com/loveyuwy/hao/refs/heads/main/WeTalk.js, timeout=60, tag=WeTalk_CheckIn, argument={通知模式}
+
+[MITM]
+hostname = api.wetalkapp.com
