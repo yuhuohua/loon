@@ -10,10 +10,10 @@ CRON−WeTalk=input,"0 10-22/6 * * *",tag=CRON−WeTalk, desc=CRON−WeTalk
 
 
 [Script]
-http-response ^https:\/\/api\.wetalkapp\.com\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/WeTalk.js, requires-body=true, timeout=60, tag=Wetalk_GetCookie, enable = {token获取}
+http-response ^https:\/\/api\.wetalkapp\.com\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/WeTalk1.js, requires-body=true, timeout=60, tag=Wetalk_GetCookie, enable = {token获取}
 
 
-cron {CRON−WeTalk} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/WeTalk.js, timeout=60, tag=WeTalk_CheckIn, argument={通知模式}
+cron {CRON−WeTalk} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/WeTalk1.js, timeout=60, tag=WeTalk_CheckIn, argument={通知模式}
 
 [MITM]
 hostname = api.wetalkapp.com
