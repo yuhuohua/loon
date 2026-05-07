@@ -16,7 +16,7 @@ CRON定时设置 = input, "0 10-22/6 * * *", tag =CRON定时设置, desc =CRON�
 http-response ^https:\/\/xcx\.myinyun\.com:4438\/napi\/wx\/login script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/sjtoken.js, requires-body=true, timeout=60, tag=声荐自动抓取token, enable = {enable_token_capture}
 
 # 每日任务脚本
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/sj.js, timeout=60, tag=声荐每日任务
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/sj1.js, timeout=60, tag=声荐每日任务
 
 [MITM]
 hostname = xcx.myinyun.com
