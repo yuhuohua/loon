@@ -15,4 +15,4 @@ TOKEN4=input,"",tag=TOKEN4, desc=TOKEN4
 TOKEN5=input,"",tag=TOKEN5, desc=TOKEN5
 
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhouhua/jb/refs/heads/main/zajk.js, timeout=180, tag=众安任务, argument=[{TOKEN1},{TOKEN2},{TOKEN3},{TOKEN4},{TOKEN5}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/zajk.js, timeout=180, tag=众安任务, argument=[{TOKEN1},{TOKEN2},{TOKEN3},{TOKEN4},{TOKEN5}]
