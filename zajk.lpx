@@ -1,0 +1,18 @@
+#!name=VRKA 众安任务 (多账号版)
+#!desc=支持多账号。在参数中填入 Token，单个账号金额 > 5 元时弹窗提醒。\n\n[配置参数]\n⓵CRON定时: 运行时间\n\n⓶TOKENs: 分别填入各账号 Token，不填则跳过。
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zajk.png
+#!author=〈ザㄩメ火华
+
+[Rule]
+DOMAIN-SUFFIX,iosxx.cn,DIRECT
+
+[Argument]
+CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
+TOKEN1=input,"",tag=TOKEN1, desc=TOKEN1
+TOKEN2=input,"",tag=TOKEN2, desc=TOKEN2
+TOKEN3=input,"",tag=TOKEN3, desc=TOKEN3 
+TOKEN4=input,"",tag=TOKEN4, desc=TOKEN4 
+TOKEN5=input,"",tag=TOKEN5, desc=TOKEN5
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhouhua/jb/refs/heads/main/zajk.js, timeout=180, tag=众安任务, argument=[{TOKEN1},{TOKEN2},{TOKEN3},{TOKEN4},{TOKEN5}]
