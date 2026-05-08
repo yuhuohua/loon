@@ -13,4 +13,4 @@ CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
 账号和密码5=input,"",tag= 账号和密码5, desc= 账号和密码5
 
 [Script]
-cron {CRON定时设置} script-path= 69yun.js, timeout=120, tag= 69云多账号签到, argument=[{账号和密码1},{账号和密码2},{账号和密码3},{账号和密码4},{账号和密码5},{静默运行}]
+cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/69yun.js, timeout=120, tag= 69云多账号签到, argument=[{账号和密码1},{账号和密码2},{账号和密码3},{账号和密码4},{账号和密码5},{静默运行}]
