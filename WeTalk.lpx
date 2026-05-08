@@ -1,5 +1,5 @@
 #!name=WeTalk 自动化签到+视频奖励
-#!desc=WeTalk 签到做任务白嫖国外手机号\n\nCRON−WeTalk:脚本运行时间(默认早上10点、下午16点、晚上22点)\n\n通知模式，1为每次运行都弹窗通知，0为仅22点运行有总汇通知。
+#!desc=WeTalk 签到做任务白嫖国外手机号\n\nCRON−WeTalk:脚本运行时间(默认早上10点、下午16点、晚上22点)\n\n通知模式，1为每次运行都弹窗通知，0为仅22点运行有汇总通知。
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/WeTalk.png
 
 
