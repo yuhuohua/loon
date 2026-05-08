@@ -1,5 +1,5 @@
 #!name=VRKA 众安任务 (自定义版)
-#!desc=支持多账号。可自定义提现金额门槛，达到后才弹窗提醒。
+#!desc=支持多账号。可自定义提现金额门槛，达到后才弹窗提醒（默认30）。
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zajk.png
 
 [Rule]
@@ -7,7 +7,7 @@ DOMAIN-SUFFIX,iosxx.cn,DIRECT
 
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
-THRESHOLD=input,"5",tag=提现门槛, desc=达到此金额才弹窗提醒
+THRESHOLD=input,"30",tag=提现门槛, desc=达到此金额才弹窗提醒
 TOKEN1=input,"",tag=TOKEN1, desc=TOKEN1
 TOKEN2=input,"",tag=TOKEN2, desc=TOKEN2
 TOKEN3=input,"",tag=TOKEN3, desc=TOKEN3 
