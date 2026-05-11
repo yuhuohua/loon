@@ -1,0 +1,9 @@
+#!name=乐仔生活库存巡检
+#!desc=发现有现金库存弹窗，无库存静默
+#!icon= https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/lzsh.png
+
+[Argument]
+CRON定时设置=input,"*/30 8-18 * * *",tag=CRON定时设置, desc=CRON定时设置
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/lzsh.js, timeout=60, tag=乐仔生活库存巡检
