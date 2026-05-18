@@ -5,7 +5,7 @@
 
 [Argument]
 token获取 = switch, true, true, tag = 抓取Token开关, desc = 默认开启。抓取Token成功后, 可关闭此开关
-CRON−PingMe=input,"* */2 * * *",tag=CRON−PingMe, desc=CRON−PingMe
+CRON−PingMe=input,"0 */2 * * *",tag=CRON−PingMe, desc=CRON−PingMe
 通知模式 = select, "0", "1", tag = 通知模式, desc = 0:22点汇总, 1:每次通知
 
 [Script]
