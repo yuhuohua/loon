@@ -1,5 +1,5 @@
 #!name=PingMe 自动化签到+视频奖励
-#!desc=PingMe 签到做任务白嫖国外手机号\n\nCRON−PingMe:脚本运行时间(默认早上10点到晚上22点每3小时运行一次)\n\n通知模式，1为每次运行都弹窗通知，0为仅22点运行有汇总通知。
+#!desc=PingMe 签到做任务白嫖国外手机号\n\nCRON−PingMe:脚本运行时间(默认每2小时运行一次)\n\n通知模式，1为每次运行都弹窗通知，0为仅22点运行有汇总通知。
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/PingMe.png
 
 
