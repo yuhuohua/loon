@@ -10,4 +10,4 @@
 CRON定时设置 = input, "0 8 * * *", tag=定时设置, desc=CRON 定时表达式
 
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx.js, timeout=60, tag=电信话费流量, argument=phone=[{手机号码}]&pwd=[{服务密码}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx1.js, timeout=60, tag=电信话费流量, argument=phone=[{手机号码}]&pwd=[{服务密码}]
