@@ -8,7 +8,7 @@
 [Argument]
 手机号码=input,"",tag=手机号码, desc=手机号码
 服务密码=input,"",tag=服务密码, desc=服务密码
-Cron定时设置=input,0 8 * * *,tag=Cron定时设置, desc=Cron定时设置
+Cron定时设置=input,"0 8 * * *",tag=Cron定时设置, desc=Cron定时设置
 
 
 [Script]
