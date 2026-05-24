@@ -1,7 +1,7 @@
 #!name=电信话费流量监控
 #!desc=监控电信话费与流量信息，支持自定义手机号与密码
 #!author=〈ザㄩメ火华
-#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/dxcx.png
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zgdx.png
 #!tag=〈ザㄩメ火华
 #!arguments-desc=手机号码: 您的电信手机号码\n服务密码: 您的电信服务密码\nCron定时设置: CRON 定时表达式，默认每天早上 8 点执行\n静默运行: 静默运行 (填 # 则静默不弹窗通知，留空则正常弹窗通知)\n接口由贰月红大佬提供。
 
