@@ -11,5 +11,5 @@ Cron定时设置=input,0 8 * * *,tag=Cron定时设置, desc=Cron定时设置
 静默运行=input,"",tag=静默运行, desc=静默运行
 
 [Script]
-cron {Cron定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx.js, timeout=60, tag=电信余量, argument=phone={手机号码}&pwd={服务密码}&silent=[{静默运行}]
+cron {Cron定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx.js, timeout=60, tag=电信余量, argument=phone=[{手机号码}{服务密码}]&silent=[{静默运行}]
 ~
