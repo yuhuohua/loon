@@ -2,7 +2,7 @@
 #!desc=监控电信话费与流量信息。支持在 Loon 插件设置中直接配置手机号与服务密码，定时触发通知弹窗。
 #!author=〈ザㄩメ火华
 #!category=数据查询
-#!icon =https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/dxcx.png
+#!icon =https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zgdx.png
 
 [Argument]
 手机号码 = input, "17396213152", tag=手机号码, desc=请输入您的电信手机号码
