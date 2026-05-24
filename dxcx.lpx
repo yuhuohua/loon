@@ -6,9 +6,10 @@
 #!arguments-desc=手机号码: 您的电信手机号码\n服务密码: 您的电信服务密码\nCron定时设置: CRON 定时表达式，默认每天早上 8 点执行\n静默运行: 静默运行 (填 # 则静默不弹窗通知，留空则正常弹窗通知)\n接口由贰月红大佬提供。
 
 [Argument]
-手机号码=input,", 服务密码:,tag=手机号码, desc=手机号码
+手机号码=input,"",tag=手机号码, desc=手机号码
+服务密码=input,"",tag=服务密码, desc=服务密码
 Cron定时设置=input,0 8 * * *,tag=Cron定时设置, desc=Cron定时设置
-静默运行=input,"",tag=静默运行, desc=静默运行
+
 
 [Script]
 cron {Cron定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx.js, timeout=60, tag=电信余量, argument=[{手机号码}{服务密码}]
