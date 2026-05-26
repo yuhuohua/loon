@@ -1,5 +1,5 @@
 #!name=电信话费流量监控
-#!desc=监控电信话费与流量信息。支持在 Loon 插件设置中直接配置手机号与服务密码，定时触发通知弹窗。
+#!desc=监控电信话费与流量信息。\n支持在 Loon 插件设置中直接配置手机号与服务密码，\n格式:手机号码：服务密码。示例：18888888888:123456\ncron表达式定时触发通知弹窗。
 #!author=〈ザㄩメ火华
 #!category=数据查询
 #!icon =https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zgdx.png
