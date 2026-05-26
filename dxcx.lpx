@@ -8,9 +8,9 @@
 账号1 = input, "", tag=账号1, desc=请输入 手机号:服务密码
 账号2 = input, "", tag=账号2, desc=请输入 手机号:服务密码
 账号3 = input, "", tag=账号3, desc=请输入 手机号:服务密码
-账号4 = input, "", tag=账号1, desc=请输入 手机号:服务密码
-账号5 = input, "", tag=账号2, desc=请输入 手机号:服务密码
-账号6 = input, "", tag=账号3, desc=请输入 手机号:服务密码
+账号4 = input, "", tag=账号4, desc=请输入 手机号:服务密码
+账号5 = input, "", tag=账号5, desc=请输入 手机号:服务密码
+账号6 = input, "", tag=账号6, desc=请输入 手机号:服务密码
 静默运行 = switch, false, tag=静默运行, desc=是否静默不弹窗
 CRON定时设置 = input, "0 8 * * *", tag=定时设置, desc=定时表达式
 
