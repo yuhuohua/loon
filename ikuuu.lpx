@@ -9,4 +9,4 @@ CRON定时设置=input,"0 9 * * *",tag=cron, desc=CRON定时设置
 账号和密码=input,"",tag=account, desc=邮箱:密码 或 邮箱*密码
 
 [Script]
-cron {cron} script-path=ikuuu.js, timeout=120, tag=ikuuu签到, argument=[{account},{silent}]
+cron {cron} script-path=ik.js, timeout=120, tag=ikuuu签到, argument=[{account},{silent}]
