@@ -1,6 +1,6 @@
 #!name= ikuuu 签到
 #!desc= 每日自动签到，邮箱:密码
-#!author=yourname
+#!author=火华
 
 [Argument]
 CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
@@ -8,4 +8,4 @@ CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
 账号和密码=input,"",tag=账号和密码, desc=邮箱:密码
 
 [Script]
-cron {CRON定时设置} script-path=ik.js, timeout=120, tag=ikuuu签到, argument={账号和密码} {静默运行}
+cron {CRON定时设置} script-path=ik.js, timeout=120, tag=ikuuu签到, argument={账号和密码}{静默运行}
