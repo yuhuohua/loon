@@ -5,9 +5,14 @@
 #!icon =https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/zgdx.png
 
 [Argument]
-手机号码 = input, "17396213152", tag=手机号码, desc=请输入您的电信手机号码
-服务密码 = input, "050116", tag=服务密码, desc=请输入您的电信服务密码或接口密码后缀
-CRON定时设置 = input, "0 8 * * *", tag=定时设置, desc=CRON 定时表达式
+账号1 = input, "", tag=账号1, desc=请输入 手机号:服务密码
+账号2 = input, "", tag=账号2, desc=请输入 手机号:服务密码
+账号3 = input, "", tag=账号3, desc=请输入 手机号:服务密码
+账号4 = input, "", tag=账号1, desc=请输入 手机号:服务密码
+账号5 = input, "", tag=账号2, desc=请输入 手机号:服务密码
+账号6 = input, "", tag=账号3, desc=请输入 手机号:服务密码
+静默运行 = switch, false, tag=静默运行, desc=是否静默不弹窗
+CRON定时设置 = input, "0 8 * * *", tag=定时设置, desc=定时表达式
 
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx.js, timeout=60, tag=电信话费流量, argument=[{手机号码},{服务密码}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/dxcx1.js, timeout=60, tag=电信话费流量, argument=[{账号1},{账号2},{账号3},{账号4},{账号5},{账号6},{静默运行}]
