@@ -1,6 +1,7 @@
 #!name= ikuuu 签到
-#!desc= 每日自动签到，格式：邮箱:密码
-#!author= yourname
+#!desc= 每日自动签到，格式：邮箱:密码。示例： 123456@qq.com：123456。
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/ikuuu.png
+#!author=〈ザㄩメ火华
 
 [Argument]
 cron = input, "0 9 * * *", tag=定时设置, desc=每日自动运行的时间
