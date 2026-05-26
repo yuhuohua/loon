@@ -1,11 +1,12 @@
 #!name= ikuuu 签到
-#!desc= 每日自动签到，邮箱:密码 或 邮箱*密码
-#!author=yourname
+#!desc= 每日自动签到，格式：邮箱:密码
+#!author= yourname
+#!homepage= https://github.com
 
 [Argument]
-CRON定时设置=input,"0 9 * * *",tag=cron, desc=运行时间(默认早9点)
-静默运行=input,"",tag=silent, desc=静默运行(填 # 静默，留空通知)
-账号和密码=input,"",tag=account, desc=邮箱:密码 或 邮箱*密码
+cron = input, "0 9 * * *", tag=定时设置, desc=每日自动运行的时间
+account = input, "", tag=账号密码(邮箱:密码), desc=请填入 邮箱:密码 (例如 abc@qq.com:123456)
+silent = switch, false, tag=静默运行, desc=开启后将不再弹出通知
 
 [Script]
-cron {cron} script-path=ikuuu.js, timeout=120, tag=ikuuu签到, argument=[{account},{silent}]
+cron {cron} script-path=ikuuu.js, timeout=120, tag=ikuuu签到, argument="account={account}&silent={silent}"
