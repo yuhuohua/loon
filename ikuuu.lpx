@@ -1,11 +1,12 @@
 #!name= ikuuu 签到
-#!desc= 每日自动签到，邮箱:密码
-#!author=火华
+#!desc= 每日自动签到，支持 : 或 * 分隔
+#!icon=https://raw.githubusercontent.com/你的用户名/仓库名/main/ikuuu.png
+#!author=yourname
 
 [Argument]
-CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
-静默运行=input,"",tag=静默运行, desc=静默运行(填 # 静默)
-账号和密码=input,"",tag=账号和密码, desc=邮箱:密码
+CRON定时设置=input,"0 9 * * *",tag=cron, desc=CRON定时设置
+静默运行=input,"",tag=silent, desc=静默运行(填#静默)
+账号和密码=input,"",tag=account, desc=邮箱:密码 或 邮箱*密码
 
 [Script]
-cron {CRON定时设置} script-path=ik.js, timeout=120, tag=ikuuu签到, argument=[{账号和密码},{静默运行}]
+cron {cron} script-path=ikuuu.js, timeout=120, tag=ikuuu签到, argument={account} {silent}
