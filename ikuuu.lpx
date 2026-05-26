@@ -1,5 +1,5 @@
 #!name= ikuuu 签到
-#!desc= 每日自动签到，邮箱:密码
+#!desc= 每日自动签到，邮箱:密码 或 邮箱*密码
 #!author=yourname
 
 [Argument]
