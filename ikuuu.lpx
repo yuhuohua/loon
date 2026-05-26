@@ -1,9 +1,11 @@
-#!name= ikuuu 调试
-#!desc= 参数传递调试
-#!author=debug
+#!name= ikuuu 签到
+#!desc= 每日自动签到，邮箱:密码
+#!author=yourname
 
 [Argument]
-CRON定时设置=input,"* * * * *",tag=cron, desc=每分钟运行一次
+CRON定时设置=input,"0 9 * * *",tag=cron, desc=运行时间(默认早9点)
+静默运行=input,"",tag=silent, desc=静默运行(填 # 静默，留空通知)
+账号和密码=input,"",tag=account, desc=邮箱:密码 或 邮箱*密码
 
 [Script]
-cron {cron} script-path=ikuuu_debug.js, timeout=30, tag=ikuuu调试, argument=test@gmail.com:123456
+cron {cron} script-path=ikuuu.js, timeout=120, tag=ikuuu签到, argument=[{account},{silent}]
