@@ -5,7 +5,7 @@
 
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
-弹窗门槛金额=input,"3",tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
+弹窗门槛金额=input,"3.03",tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
 账号 1=input,"",tag= 账号 1, desc=格式: 标签&OpenID，如 张三&oBV...
 账号 2=input,"",tag= 账号 2, desc=格式: 标签&OpenID
 账号 3=input,"",tag= 账号 3, desc=格式: 标签&OpenID
