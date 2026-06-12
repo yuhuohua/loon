@@ -2,8 +2,6 @@
 #!desc=支持多账号，自定义标签。可设提现门槛，达标弹窗。\n 参数格式：标签&OpenID ，如：张三&oBV0d7Z1Ei...
 #!icon= https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/nndj.png
 
-[Rule]
-DOMAIN-SUFFIX,152.136.162.202,DIRECT
 
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
