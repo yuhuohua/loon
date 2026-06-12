@@ -6,16 +6,16 @@
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
 弹窗门槛金额=input,"3.03",tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
-账号 1=input,"",tag= 账号 1, desc=格式: 标签&OpenID，如 张三&oBV...
-账号 2=input,"",tag= 账号 2, desc=格式: 标签&OpenID
-账号 3=input,"",tag= 账号 3, desc=格式: 标签&OpenID
-账号 4=input,"",tag= 账号 4, desc=格式: 标签&OpenID
-账号 5=input,"",tag= 账号 5, desc=格式: 标签&OpenID
-账号 6=input,"",tag= 账号 6, desc=格式: 标签&OpenID
-账号 7=input,"",tag= 账号 7, desc=格式: 标签&OpenID
-账号 8=input,"",tag= 账号 8, desc=格式: 标签&OpenID
-账号 9=input,"",tag= 账号 9, desc=格式: 标签&OpenID
-账号 10=input,"",tag= 账号 10, desc=格式: 标签&OpenID
+账号1=input,"",tag= 账号1, desc=格式: 标签&OpenID，如 张三&oBV...
+账号2=input,"",tag= 账号2, desc=格式: 标签&OpenID
+账号3=input,"",tag= 账号3, desc=格式: 标签&OpenID
+账号4=input,"",tag= 账号4, desc=格式: 标签&OpenID
+账号5=input,"",tag= 账号5, desc=格式: 标签&OpenID
+账号6=input,"",tag= 账号6, desc=格式: 标签&OpenID
+账号7=input,"",tag= 账号7, desc=格式: 标签&OpenID
+账号8=input,"",tag= 账号8, desc=格式: 标签&OpenID
+账号9=input,"",tag= 账号9, desc=格式: 标签&OpenID
+账号10=input,"",tag= 账号10, desc=格式: 标签&OpenID
 
 [Script]
-cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj1.js, timeout=60, tag=牛牛短剧余额查询, argument=[{弹窗门槛金额},{账号 1},{账号 2},{账号 3},{账号 4},{账号 5},{账号 6},{账号 7},{账号 8},{账号 9},{账号 10}]
+cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj1.js, timeout=60, tag=牛牛短剧余额查询, argument=[{弹窗门槛金额},{账号1},{账号2},{账号3},{账号4},{账号5},{账号6},{账号7},{账号8},{账号9},{账号10}]
