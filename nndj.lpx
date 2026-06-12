@@ -1,5 +1,5 @@
 #!name=牛牛短剧余额查询
-#!desc=支持多账号，自定义标签。可设提现门槛，达标弹窗。\n 参数格式：标签&OpenID ，如：张三&oBV0d7Z1Ei...
+#!desc=支持多账号，自定义标签。可设提现门槛，达标弹窗。\n参数格式：标签&OpenID ，如：张三&oBV0d7Z1Ei...
 #!icon= https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/nndj.png
 
 
