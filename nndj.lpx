@@ -1,9 +1,6 @@
-#!name=牛牛短剧余额查询 (自定义标签版)
-#!desc=支持多账号，自定义标签。可设提现门槛，达标弹窗。参数格式：标签&OpenID
-#!icon=https://raw.githubusercontent.com/你的用户名/你的仓库/main/nndj.png
-
-[Rule]
-DOMAIN-SUFFIX,152.136.162.202,DIRECT
+#!name=牛牛短剧余额查询
+#!desc=支持多账号，自定义标签。可设提现门槛，达标弹窗。参数格式：标签&OpenID，如：张三&oBV0d7Z1Ei...\n接口由贰月红大佬提供
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/nndj.png
 
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
@@ -13,6 +10,10 @@ ACCOUNT2=input,"",tag=ACCOUNT2, desc=格式: 标签&OpenID
 ACCOUNT3=input,"",tag=ACCOUNT3, desc=格式: 标签&OpenID
 ACCOUNT4=input,"",tag=ACCOUNT4, desc=格式: 标签&OpenID
 ACCOUNT5=input,"",tag=ACCOUNT5, desc=格式: 标签&OpenID
-
+ACCOUNT6=input,"",tag=ACCOUNT6, desc=格式: 标签&OpenID
+ACCOUNT7=input,"",tag=ACCOUNT7, desc=格式: 标签&OpenID
+ACCOUNT8=input,"",tag=ACCOUNT8, desc=格式: 标签&OpenID
+ACCOUNT9=input,"",tag=ACCOUNT9, desc=格式: 标签&OpenID
+ACCOUNT10=input,"",tag=ACCOUNT10, desc=格式: 标签&OpenID
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj.js, timeout=60, tag=牛牛短剧余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj.js, timeout=60, tag=牛牛短剧余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
