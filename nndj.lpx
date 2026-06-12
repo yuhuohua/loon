@@ -18,4 +18,4 @@ CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
 账号 10=input,"",tag= 账号 10, desc=格式: 标签&OpenID
 
 [Script]
-cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj.js, timeout=60, tag=牛牛短剧余额查询, argument=[{弹窗门槛金额},{账号 1},{账号 2},{账号 3},{账号 4},{账号 5},{账号 6},{账号 7},{账号 8},{账号 9},{账号 10}]
+cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj1.js, timeout=60, tag=牛牛短剧余额查询, argument=[{弹窗门槛金额},{账号 1},{账号 2},{账号 3},{账号 4},{账号 5},{账号 6},{账号 7},{账号 8},{账号 9},{账号 10}]
