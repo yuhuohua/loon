@@ -5,15 +5,15 @@
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
 MIN_AMOUNT=input,"3.03",tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
-ACCOUNT1=input,"",tag=ACCOUNT1, desc=格式: 标签&OpenID，如 张三&oBV...
-ACCOUNT2=input,"",tag=ACCOUNT2, desc=格式: 标签&OpenID
-ACCOUNT3=input,"",tag=ACCOUNT3, desc=格式: 标签&OpenID
-ACCOUNT4=input,"",tag=ACCOUNT4, desc=格式: 标签&OpenID
-ACCOUNT5=input,"",tag=ACCOUNT5, desc=格式: 标签&OpenID
-ACCOUNT6=input,"",tag=ACCOUNT6, desc=格式: 标签&OpenID
-ACCOUNT7=input,"",tag=ACCOUNT7, desc=格式: 标签&OpenID
-ACCOUNT8=input,"",tag=ACCOUNT8, desc=格式: 标签&OpenID
-ACCOUNT9=input,"",tag=ACCOUNT9, desc=格式: 标签&OpenID
-ACCOUNT10=input,"",tag=ACCOUNT10, desc=格式: 标签&OpenID
+ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&OpenID，如 张三&oBV...
+ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&OpenID
+ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&OpenID
+ACCOUNT4=input,"",tag=账号4, desc=格式: 标签&OpenID
+ACCOUNT5=input,"",tag=账号5, desc=格式: 标签&OpenID
+ACCOUNT6=input,"",tag=账号6, desc=格式: 标签&OpenID
+ACCOUNT7=input,"",tag=账号7, desc=格式: 标签&OpenID
+ACCOUNT8=input,"",tag=账号8, desc=格式: 标签&OpenID
+ACCOUNT9=input,"",tag=账号9, desc=格式: 标签&OpenID
+ACCOUNT10=input,"",tag=账号10, desc=格式: 标签&OpenID
 [Script]
 cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/nndj.js, timeout=60, tag=牛牛短剧余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
