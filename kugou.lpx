@@ -1,0 +1,20 @@
+#!name=酷狗金币余额查询
+#!desc=支持多账号，自定义标签。只在日志打印历史记录，弹窗仅显示概览。参数格式：标签&ck#UID
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/kugou.png
+
+[Argument]
+CRON定时设置=input,"0 22 * * *",tag=CRON定时设置, desc=默认22点汇总
+COUNT=input,"100",tag=历史明细数量, desc=统一设置所有账号获取的历史明细数量
+ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&ck#UID
+ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&ck#UID
+ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&ck#UID
+ACCOUNT4=input,"",tag=账号4, desc=格式: 标签&ck#UID
+ACCOUNT5=input,"",tag=账号5, desc=格式: 标签&ck#UID
+ACCOUNT6=input,"",tag=账号6, desc=格式: 标签&ck#UID
+ACCOUNT7=input,"",tag=账号7, desc=格式: 标签&ck#UID
+ACCOUNT8=input,"",tag=账号8, desc=格式: 标签&ck#UID
+ACCOUNT9=input,"",tag=账号9, desc=格式: 标签&ck#UID
+ACCOUNT10=input,"",tag=账号10, desc=格式: 标签&ck#UID
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/kugou.js, timeout=60, tag=酷狗金币余额查询, argument=[{COUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
