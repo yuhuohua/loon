@@ -4,7 +4,7 @@
 
 [Argument]
 CRON定时设置=input,"0 22 * * *",tag=CRON定时设置, desc=默认22点汇总
-COUNT=input,"100",tag=历史明细数量, desc=统一设置所有账号获取的历史明细数量
+COUNT=input,"5",tag=历史明细数量, desc=统一设置所有账号获取的历史明细数量
 ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&ck#UID
 ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&ck#UID
 ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&ck#UID
