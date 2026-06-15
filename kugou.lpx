@@ -3,7 +3,7 @@
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/kugou.png
 
 [Argument]
-CRON定时设置=input,"30 0,8,12,16,20 * * *",tag=CRON定时设置, desc=默认0，8，12，16，20点30秒通知
+CRON定时设置=input,"01 20 * * *",tag=CRON定时设置, desc=默认20点01分通知
 COUNT=input,"5",tag=历史明细数量, desc=统一设置所有账号获取的历史明细数量
 TOTAL_SWITCH=select,"","#",tag=汇总弹窗开关, desc=是否在弹窗通知底部显示所有账号的已提现总额总和
 ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&ck#UID
