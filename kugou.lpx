@@ -7,6 +7,7 @@ CRON定时设置=input,"01 20 * * *",tag=CRON定时设置, desc=默认20点01分
 COUNT=input,"5",tag=历史明细数量, desc=统一设置所有账号获取的历史明细数量
 TODAY_SWITCH=select,"","#",tag=今日汇总开关, desc=是否在弹窗通知显示所有账号的今日提现总和
 TOTAL_SWITCH=select,"","#",tag=汇总弹窗开关, desc=是否在弹窗通知底部显示所有账号的已提现总额总和
+ACCOUNT_SWITCH=select,"","#",tag=账号弹窗开关, desc=是否弹窗显示每个账号的详细数据
 ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&token#userid
 ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&token#userid
 ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&token#userid
@@ -19,4 +20,4 @@ ACCOUNT9=input,"",tag=账号9, desc=格式: 标签&token#userid
 ACCOUNT10=input,"",tag=账号10, desc=格式: 标签&token#userid
 
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/kugou.js, timeout=60, tag=酷狗金币余额查询, argument=[{COUNT},{TODAY_SWITCH},{TOTAL_SWITCH},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/kugou.js, timeout=60, tag=酷狗金币余额查询, argument=[{COUNT},{TODAY_SWITCH},{TOTAL_SWITCH},{ACCOUNT_SWITCH},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
