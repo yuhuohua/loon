@@ -1,5 +1,5 @@
 #!name=酷狗金币余额查询
-#!desc=支持多账号，自定义标签。只在日志打印历史记录，弹窗仅显示概览。\n参数格式：标签&token#userid，如：大号&23IR6x...#123456。\n汇总弹窗开关：留空开，填#关(默认打开)。\n今天提现总额的标签用的是标签的第一个中文字。
+#!desc=支持多账号，自定义标签。只在日志打印历史记录，弹窗仅显示概览。\n参数格式：标签&token#userid，如：大号&23IR6x...#123456。\n弹窗开关：留空开，填#关(默认打开)。\n今天提现总额的标签用的是标签的第一个中文字。
 #!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/kugou.png
 
 [Argument]
