@@ -12,7 +12,7 @@ CRON−PingMe=input,"0 10-22/4 * * *",tag=CRON−PingMe, desc=CRON−PingMe
 http-response ^https:\/\/api\.pingmeapp\.net\/app\/queryBalanceAndBonus script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/PingMe_cookie.js, requires-body=true, timeout=60, tag=PingMe_cookie, enable = {token获取}
 
 
-cron {CRON−PingMe} script-path=PingMe.js, timeout=60, tag=PingMe, argument=[{通知模式}]
+cron {CRON−PingMe} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/PingMe.js, timeout=60, tag=PingMe, argument=[{通知模式}]
 
 [MITM]
 hostname = api.pingmeapp.net
