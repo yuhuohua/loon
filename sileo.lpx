@@ -1,0 +1,30 @@
+#!name=越狱插件更新检测
+#!desc=定时查询越狱源(Sileo/Cydia)插件更新状态，支持多源并发查询，可自定义20个插件参数。\n\n⓶ 插件数据 (最高支持20个): \n格式: 名称@包名(BundleID)@源地址@图标\n(注: 源地址尽量填写包含 Packages 文件的直接根目录，图标选填)\n\n示例1: FLEX 3@com.johncoates.flex3@https://vxbaker.com/repo@🛠️
+#!author=〈ザㄩメ火华
+#!icon = https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/sileo.png
+
+[Argument]
+CRON定时设置 = input, "0 8-23/1 * * *", tag=CRON定时设置, desc=每天运行的时间 (默认早上8点到晚上11点，每1个小时运行一次)
+插件1 = input, "", tag=插件1, desc=格式: 名称@包名@源地址@图标
+插件2 = input, "", tag=插件2
+插件3 = input, "", tag=插件3
+插件4 = input, "", tag=插件4
+插件5 = input, "", tag=插件5
+插件6 = input, "", tag=插件6
+插件7 = input, "", tag=插件7
+插件8 = input, "", tag=插件8
+插件9 = input, "", tag=插件9
+插件10 = input, "", tag=插件10
+插件11 = input, "", tag=插件11
+插件12 = input, "", tag=插件12
+插件13 = input, "", tag=插件13
+插件14 = input, "", tag=插件14
+插件15 = input, "", tag=插件15
+插件16 = input, "", tag=插件16
+插件17 = input, "", tag=插件17
+插件18 = input, "", tag=插件18
+插件19 = input, "", tag=插件19
+插件20 = input, "", tag=插件20
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/sileojc.js, timeout=120, tag=越狱插件检测, argument=[{插件1},{插件2},{插件3},{插件4},{插件5},{插件6},{插件7},{插件8},{插件9},{插件10},{插件11},{插件12},{插件13},{插件14},{插件15},{插件16},{插件17},{插件18},{插件19},{插件20}]
