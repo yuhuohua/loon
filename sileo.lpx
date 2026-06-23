@@ -1,5 +1,5 @@
 #!name=越狱插件更新检测
-#!desc=定时查询越狱源(Sileo/Cydia)插件更新状态，支持多源并发查询，可自定义20个插件参数。\n\n⓶ 插件数据 (最高支持20个): \n格式: 名称@包名(BundleID)@源地址@图标\n(注: 源地址尽量填写包含 Packages 文件的直接根目录，图标选填)\n\n示例1: FLEX 3@com.johncoates.flex3@https://vxbaker.com/repo@🛠️\n\n示例2: 巨魔商店@com.opa334.trollstore@https://havoc.app
+#!desc=定时查询越狱源(Sileo/Cydia)插件更新状态，支持多源并发查询，可自定义20个插件参数。\n\n⓶ 支持直接填入越狱源或插件数据 (最高支持20个): \n格式: 名称@包名(BundleID)@源地址@图标\n(注: 源地址尽量填写包含 Packages 文件的直接根目录，图标选填)\n\n示例1: FLEX 3@com.johncoates.flex3@https://vxbaker.com/repo@🛠️\n\n示例2: 巨魔商店@com.opa334.trollstore@https://havoc.app\n\n示例3: https://havoc.app(直接填入越狱源就行)
 #!author=〈ザㄩメ火华
 #!icon = https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/sileo.png
 
