@@ -1,0 +1,19 @@
+#!name=乐仔生活 Token 检测
+#!desc=支持多账号，自定义标签。检测 Token 是否失效，失效弹窗，正常静默。参数格式：标签&Token，如：张三&eyJ0e...
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/lzsh.png
+
+[Argument]
+CRON定时设置=input,"0 9 * * *",tag=CRON定时设置, desc=CRON定时设置
+ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&Token，如 张三&eyJ0...
+ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&Token
+ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&Token
+ACCOUNT4=input,"",tag=账号4, desc=格式: 标签&Token
+ACCOUNT5=input,"",tag=账号5, desc=格式: 标签&Token
+ACCOUNT6=input,"",tag=账号6, desc=格式: 标签&Token
+ACCOUNT7=input,"",tag=账号7, desc=格式: 标签&Token
+ACCOUNT8=input,"",tag=账号8, desc=格式: 标签&Token
+ACCOUNT9=input,"",tag=账号9, desc=格式: 标签&Token
+ACCOUNT10=input,"",tag=账号10, desc=格式: 标签&Token
+
+[Script]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/lzshck.js, timeout=60, tag=乐仔Token检测, argument=[{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
