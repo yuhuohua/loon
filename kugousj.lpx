@@ -1,0 +1,11 @@
+#!name=酷狗帐号捕获
+#!desc=酷狗帐号捕获，捕获完去脚本任务里复制。
+#!author=〈ザㄩメ火华
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/kugou.png
+#!tag=〈ザㄩメ火华
+
+[Script]
+http-request ^https:\/\/gateway\.kugou\.com\/mstc\/musicsymbol\/v1\/user\/info\?srcappid script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/kugousj.js, tag=酷狗URL捕获
+
+[MITM]
+hostname = gateway.kugou.com
