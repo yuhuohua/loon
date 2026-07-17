@@ -1,0 +1,10 @@
+#!name=天机观token抓取
+#!desc=天机观token抓取，捕获后去脚本任务查看日志复制
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/tjgtk.png
+#!author=〈ザㄩメ火华
+
+[Script]
+http-response ^https:\/\/xcx\.tianjiguan\.cn\/api\/user\/autoLogin script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/tjgtk.js, requires-body=true, tag=获取登录Token
+
+[MITM]
+hostname = xcx.tianjiguan.cn
