@@ -1,0 +1,11 @@
+#!name=匠心忠华抓取
+#!desc=匠心忠华抓取X-Token，获取成功后在日志薄日查看。
+#!author=〈ザㄩメ火华
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/jxzh.png
+#!tag=面板数据捕获
+
+[Script]
+http-request ^https:\/\/api\.quwayouxuan\.com\/cart\/index\/getCartCount script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/jxzhtk.js, tag=获取Token
+
+[MITM]
+hostname = api.quwayouxuan.com
