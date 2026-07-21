@@ -4,7 +4,7 @@
 
 [Argument]
 CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
-MIN_AMOUNT=input,"50,tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
+MIN_AMOUNT=input,"50",tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
 ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&token#user，如 138&2853007...#28538...
 ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&token#user
 ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&token#user
