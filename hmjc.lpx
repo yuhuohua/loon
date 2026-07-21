@@ -1,0 +1,20 @@
+#!name=河马剧场余额查询
+#!desc=标签&token#user。支持多账号，达标弹窗。
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/hmjc.png
+
+[Argument]
+CRON定时设置=input,"0 12 * * *",tag=CRON定时设置, desc=CRON定时设置
+MIN_AMOUNT=input,"50,tag=提现门槛(元), desc=可提余额达到此金额才弹窗提醒
+ACCOUNT1=input,"",tag=账号1, desc=格式: 标签&token#user，如 138&2853007...#28538...
+ACCOUNT2=input,"",tag=账号2, desc=格式: 标签&token#user
+ACCOUNT3=input,"",tag=账号3, desc=格式: 标签&token#user
+ACCOUNT4=input,"",tag=账号4, desc=格式: 标签&token#user
+ACCOUNT5=input,"",tag=账号5, desc=格式: 标签&token#user
+ACCOUNT6=input,"",tag=账号6, desc=格式: 标签&token#user
+ACCOUNT7=input,"",tag=账号7, desc=格式: 标签&token#user
+ACCOUNT8=input,"",tag=账号8, desc=格式: 标签&token#user
+ACCOUNT9=input,"",tag=账号9, desc=格式: 标签&token#user
+ACCOUNT10=input,"",tag=账号10, desc=格式: 标签&token#user
+
+[Script]
+cron {CRON定时设置} script-path= https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/hmjc.js, timeout=60, tag=河马剧场余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10}]
