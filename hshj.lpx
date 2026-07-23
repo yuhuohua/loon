@@ -1,0 +1,11 @@
+#!name=红色火箭捕获
+#!desc=红色火箭openid，ticket，user_id，获取成功后在日志薄日查看。
+#!author=〈ザㄩメ火华
+#!icon=https://raw.githubusercontent.com/yuhuohua/tupiao/refs/heads/main/hshj.png
+#!tag=面板数据捕获
+
+[Script]
+http-request ^https:\/\/index.amcfortune.com\/fundex-activity\/operation\/FaPopups? script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/hshj.js, tag=红色火箭
+
+[MITM]
+hostname = index.amcfortune.com
