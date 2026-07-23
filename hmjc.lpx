@@ -27,4 +27,4 @@ ACCOUNT19=input,"",tag=账号19, desc=格式: 标签&token#user
 ACCOUNT20=input,"",tag=账号20, desc=格式: 标签&token#user
 
 [Script]
-cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/hmjc.js, timeout=60, tag=河马剧场余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10},{ACCOUNT11},{ACCOUNT12},{ACCOUNT13},{ACCOUNT14},{ACCOUNT15},{ACCOUNT16},{ACCOUNT17},{ACCOUNT18},{ACCOUNT19},{ACCOUNT20}]
+cron {CRON定时设置} script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/hmjc.js, timeout=180, tag=河马剧场余额查询, argument=[{MIN_AMOUNT},{ACCOUNT1},{ACCOUNT2},{ACCOUNT3},{ACCOUNT4},{ACCOUNT5},{ACCOUNT6},{ACCOUNT7},{ACCOUNT8},{ACCOUNT9},{ACCOUNT10},{ACCOUNT11},{ACCOUNT12},{ACCOUNT13},{ACCOUNT14},{ACCOUNT15},{ACCOUNT16},{ACCOUNT17},{ACCOUNT18},{ACCOUNT19},{ACCOUNT20}]
