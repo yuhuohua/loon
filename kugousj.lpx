@@ -8,4 +8,4 @@
 http-request ^https:\/\/gateway\.kugou\.com\/mstc\/musicsymbol\/v1\/user\/info\?srcappid script-path=https://raw.githubusercontent.com/yuhuohua/jb/refs/heads/main/kugousj.js, tag=酷狗捕获
 
 [MITM]
-hostname = gateway.kugou.com
+hostname = *.kugou.com
